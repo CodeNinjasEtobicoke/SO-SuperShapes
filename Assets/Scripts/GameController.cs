@@ -5,36 +5,38 @@ using UnityEngine.SceneManagement;
 
 public class GameController : MonoBehaviour
 {
-    [Header("Game Over UI Object")]
+    //Game over canvas object
     public GameObject gameOverCanvas;
-    [Header("Shapes Objects")]
+    //Hexagon game object
     public GameObject[] shapePrefabs;
-    [Header("Default Spawn Delay Time")]
-    public float spawnDelay = 2f;
-    [Header("Default Spawn Time")]
-    public float spawnTime = 3f;
-    // Start is called before the first frame update
+    //Spawn rate for how many
+    //objects are spawned
+    public float spawnDelay = 1f;
+    public float spawnTime = 2f;
+
     void Start()
     {
         InvokeRepeating("Spawn", spawnDelay, spawnTime);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-    
     void Spawn()
     {
         int randomInt = Random.Range(0, shapePrefabs.Length);
+        //Spawn new hexagon at position
         Instantiate(shapePrefabs[randomInt], Vector3.zero, Quaternion.identity);
     }
 
     public void GameOver()
     {
-        CancelInvoke("Spawn");
-        gameOverCanvas.SetActive(true);
+        //Game is at a stopping state
         Time.timeScale = 0;
+        //Game over canvas is visible
+        gameOverCanvas.SetActive(true);
+        CancelInvoke("Spawn");
+    }
+
+    public void Restart()
+    {
+        SceneManager.LoadScene(0);
     }
 }

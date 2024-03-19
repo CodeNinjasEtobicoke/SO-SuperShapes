@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2876814049339442104}
   - component: {fileID: 2876814049339442105}
-  - component: {fileID: 3536131344478607466}
-  - component: {fileID: -9116027613484421201}
-  - component: {fileID: -3036007228767312704}
+  - component: {fileID: 2876814049339442110}
+  - component: {fileID: 2876814049339442111}
+  - component: {fileID: 4511936208691439650}
   m_Layer: 0
   m_Name: 3 Sides
   m_TagString: Untagged
@@ -48,7 +48,6 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -84,7 +83,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!50 &3536131344478607466
+--- !u!114 &2876814049339442110
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2876814049339442106}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12e8373552587ed4bab05c035de8de2b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 2876814049339442111}
+  shrinkSpeed: 2
+--- !u!50 &2876814049339442111
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
@@ -105,7 +118,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!60 &-9116027613484421201
+--- !u!60 &4511936208691439650
 PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -171,17 +184,3 @@ PolygonCollider2D:
       - {x: 1.48, y: -0.17999999}
       - {x: 1.5, y: -0.16}
       - {x: 1.5, y: -0.13}
---- !u!114 &-3036007228767312704
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2876814049339442106}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 12e8373552587ed4bab05c035de8de2b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rb: {fileID: 3536131344478607466}
-  shrinkSpeed: 2

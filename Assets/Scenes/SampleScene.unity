@@ -434,7 +434,7 @@ GameObject:
   - component: {fileID: 1412164302}
   - component: {fileID: 1412164301}
   m_Layer: 0
-  m_Name: Game Controller
+  m_Name: GameController
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -458,6 +458,10 @@ MonoBehaviour:
   - {fileID: 3600819354773241567, guid: b9974bbe1181ab348968ea07c769aa47, type: 3}
   - {fileID: 3417114003247287460, guid: e9a3ccafa5cb3c243b896ab583de24d7, type: 3}
   - {fileID: 5608908145742263239, guid: a7a20bb749b744044bb235ea1e406d4b, type: 3}
+  - {fileID: 3417114003247287460, guid: caf2a285db794c44992c4e6c1e997e45, type: 3}
+  - {fileID: 3600819354773241567, guid: 21744e9042261914287ab6f3ec9d326b, type: 3}
+  - {fileID: 2876814049339442106, guid: a2e70d25077c0b041a35d7e48b190858, type: 3}
+  - {fileID: 5608908145742263239, guid: 93ec907a21057ce44ad856de63b1a9da, type: 3}
   spawnDelay: 2
   spawnTime: 3
 --- !u!4 &1412164302
